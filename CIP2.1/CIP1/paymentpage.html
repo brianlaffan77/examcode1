@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UYF-8">
+		<title>Basic Bootstrap</title>
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/bootstrap.min.css" /> <!--bootstrp implementetion-->
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/custom.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<!--Below is background image for this page-->
+			<style>
+			  	body {
+					background-image: url("http://cdn.speckyboy.com/wp-content/uploads/2010/04/payment_icons_01.jpg"); 
+					background-size: 100%;
+					background-repeat:no-repeat;
+				}
+		  </style>
+		
+	</head>
+	
+	<body>
+					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse ">  <!--Setup for the bootstrap navbar & link buttons on top-->
+						<div class='container'>
+								<div class="nav navbar-header">
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+										 <button type="button" class="navbar-toggle"
+											data-toggle="collapse" 	
+											data-target="#myCollapsingList">
+											<span class="sr-only">toggle navigation</span>
+											<span class="icon-bar"></span> 
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>	 
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="index.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Home</a><li>
+										<li><a href="loginpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Log In</a><li>
+										<li><a href="regeristrationform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Register</a><li>
+										<li><a href="booking.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Booking</a><li>
+										<li><a href="paymentpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Payments</a></li>
+										<li><a href="feedbackform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Feedback Form</a><li>
+										<li><a href="tel:(01)1234567" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial"> Click to Call <span class="glyphicon glyphicon-earphone"></span>(01)1234567</a><li>
+									</ul>
+								</div>
+								 
+					
+						</div>		
+					</nav><br><br><br><br>
+					<center><legend><h1 style="color: #b30000;  text-shadow: 2px 2px #0000ff; font-family: Times New Roman"><center>Payment Page</h1></center></legend><!--Header for Page-->
+						<div class='container' id='container'>
+							<input type='hidden' name='submitted' id='submitted' value='1'/>
+							<center><form id='contactus' method='post'>
+								<fieldset>
+								<!--Details for credit card-->
+									<div class="form-group">
+									   <center><label><h3 style="color: #b30000;  text-shadow: 2px 2px #0000ff; font-family: Times New Roman">Name on Card</h3></label>
+									   <input type="text" name="name" placeholder="Name on card" class="form-control" id="name"></center>
+									</div>
+									
+									<div class="form-group">
+									   <label><h3 for="cardnumber" style="color: #b30000;  text-shadow: 2px 2px #0000ff; font-family: Times New Roman">Card number</h3></label>
+									   <input type="text" name="cardnumber" placeholder="Card Number" class="form-control" id="cardnumber">
+									</div>
+									<div class="row">
+										<div class="col-xs-8 col-sm-8 col-md-8">
+											<center><label><h3 for="expiration" style="color: #b30000;  text-shadow: 2px 2px #0000ff; font-family: Times New Roman">Expiry Date</h3></label></center>
+												<div class="row">
+													<div class="col-xs-6 col-sm-6 col-md-6">          
+														<div class="form-group">
+															<input type="text" name="month" size="2" maxlength="2" placeholder="MM" class="form-control" id="expiration">
+														</div>
+													</div>
+													<div class="col-xs-6 col-sm-6 col-md-6">
+														<div class="form-group">
+															<input type="text" name="year" size="4" maxlength="4" placeholder="YYYY" class="form-control" id="year">
+														</div>
+													</div>
+												</div>
+							 
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-4">
+											<div class="form-group">
+												<label><h3 style="color: #b30000;  text-shadow: 2px 2px #0000ff; font-family: Times New Roman">CVV</h3></label>
+													<input type="text" name="cvv" placeholder="CVV" size="4" maxlength="4" class="form-control" id="cvv">
+											</div>
+										</div>
+									</div></center>
+										<div class="form-group">
+											<label class="col-md-4 control-label" for="Submit"></label>
+											<center><div class="col-md-4"> <!--ubmition button and other payment button links-->
+												<button id="Submit" class="btn btn-success" type="Submit"><a href="finish.html" style="color: #0033cc;  text-shadow: 2px 2px #ff0000; font-family: Times New Roman">Submit & Finish</a></button><br><br>
+												<button id="Submit" class="btn btn-success" type="Submit"><a href="https://www.paypal.com/signin/?returnuri=http%3A%2F%2Furi.paypal.com%2FWeb%2FWeb%2Fcgi-bin%2Fwebscr%3Fvia%3Dul&state=%3fcmd%3d_button-management" style="color: #0033cc;  text-shadow: 2px 2px #ff0000; font-family: Times New Roman">Pay By Paypal</a></button><br><br>
+												<button id="Submit" class="btn btn-success" type="Submit"><a href="https://pay.easypaymentsplus.com/loginv2.aspx" style="color: #0033cc;  text-shadow: 2px 2px #ff0000; font-family: Times New Roman">Pay By Easy Pay</a></button><br><br>
+											</div></center>
+										</div>								 
+								 
+								</fieldset>	
+							</form><center>
+
+						</div>
+						
+					</div>
+										
+					<nav class="row navbar navbar-inverse navbar-fixed-bottom"><!--Setup for the bootstrap navbar & link buttons on bottom-->
+						<div class='container'>
+						
+								<div class="nav navbar-header">  
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="cruiseship.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Cruise Ship</a></li>
+										<li><a href="suntrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sun Trip</a><li>
+										<li><a href="skitrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Ski Trip</a><li>
+										<li><a href="themepark.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Theme Park</a><li>
+										<li><a href="historicaltrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Historical Trip</a><li>
+										<li><a href="sportspackage.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sports Package</a></li>
+									</ul>
+								</div>
+						</div>		
+					</nav>
+					
+	</body>
+</html><!--End of line User--> 

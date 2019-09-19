@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UYF-8">
+		<title>Basic Bootstrap</title>
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/bootstrap.min.css" /> <!--bootstrp implementetion--> 
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/custom.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<!--Below is background image for this page-->
+		<style>
+			
+			  body {
+					background-image: url("http://thumb101.shutterstock.com/display_pic_with_logo/326716/261413963/stock-photo-photo-collage-of-historical-views-of-rome-261413963.jpg");  
+					background-size: 100%;
+					background-repeat:no-repeat;
+				}	
+					<link rel="stylesheet" href="_css/datepicker.css"><!--Set up For datepicker-->
+					<link rel="stylesheet" href="_css/bootstrap.css">
+					<link rel="stylesheet" href="_css/bootstrap-responsive.css">
+					<script type="text/javascript" src="datepicker/bootstrap-datepicker.js"></script>
+		
+		</style>
+		
+	</head>
+	
+	<body>
+					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse ">   <!--Setup for the bootstrap navbar & link buttons on top-->
+						<div class='container'>
+								<div class="nav navbar-header">
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+										 <button type="button" class="navbar-toggle"
+											data-toggle="collapse" 	
+											data-target="#myCollapsingList">
+											<span class="sr-only">toggle navigation</span>
+											<span class="icon-bar"></span> 
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>	 
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="index.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Home</a><li>
+										<li><a href="loginpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Log In</a><li>
+										<li><a href="regeristrationform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Register</a><li>
+										<li><a href="booking.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Booking</a><li>
+										<li><a href="paymentpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Payments</a></li>
+										<li><a href="feedbackform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Feedback Form</a><li>
+										<li><a href="tel:(01)1234567" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial"> Click to Call <span class="glyphicon glyphicon-earphone"></span>(01)1234567</a><li>
+									</ul>
+								</div>
+						
+							</head>	 
+					
+						</div>		
+					</nav><br><br>
+								<center><legend><h1 style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold">Create A Historical Holiday</h1></legend></center>	<!--Header for page-->		         
+									<center><div class="container">
+										<div class="row">
+											<div class="col-lg-12">
+												<center><div id="example">
+													<div id="cap-view" class="demo-section k-content"> <!--Selective of dropdown menus and other relevent data for creating holiday-->						
+														<h4 style="margin-top: 2em; color: #ff9900; text-shadow: 2px 2px #66ffcc; font-family: bold">Choose A Historical Location</h4>
+														<select id="size" style="width: 25%;" >
+															<option>Choose A Historical Location</option>
+															<option>Statue Of Liberty</option>
+															<option>Leaning Tower Of Pisa</option>
+															<option>Colosseum</option>
+															<option>Notre Dame</option>
+															<option>St. Peter's Basillica</option>
+															<option> Famillia</option>
+															<option>Great Wall Of China</option>
+															<option>Stonehenge</option>
+															<option>Arc De Triomphe</option>
+															<option>Kilimanjaro</option>
+															<option>Ayers Rock</option>
+															<option>Pyramids Of Giza</option>
+															<option>The Great Sphinx</option>
+															<option>Trevi Fountain</option>
+															<option>Acropolis</option>
+															<option>Pompeii</option>
+															<option>Crist The Redeemer</option>
+															<option>MacCu Piccu</option>
+															<option>Arena Di Verona</option>
+															<option>Rock Of Gibraltar</option>
+															<option>Moai</option>
+															<option>Temole Of Luxor</option>
+															<option>Giant's Causeway</option>
+															<option>Newgrange</option>
+															<option>Kremlin</>
+															<option>Sistine Chaple</option>
+															<option>Spanish Steps</option>
+															<option>Wailling Wall</option>
+															<option>Yellostone National PArk</option>
+															<option>Pyramids of Chichen Itza</option>
+															<option>Mayan Pyramids of Chichen Itza</option>
+														</select>
+													</div>
+												</div></center>
+									
+									
+								<center><h4 style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold">Do you wish to include flights</h4>
+								<p> 
+									<label><input type="radio" name="gender" value="male">Yes</label>
+									<label><input type="radio" name="gender" value="female">No</label>
+								</p></center>
+								
+									<div data-role="fieldcontain"><!--This is a field set form for a registeration form-->
+										<center><label for="username" style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold"><h4>Departure Location</h4></label></center>
+										<center><input type="text" name="username" id="username" value="" placeholder="Departure Location" size="50"  style="color:blue" required/></center>
+									</div>
+								<center style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold" ><h4>Departure Date: </h4><input type="date" id="myDate">
+								<p id="demo"></p><!--Date Picker-->
+								<script>
+								function myFunction() {
+									document.getElementById("myDate").step = "2";
+									document.getElementById("demo").innerHTML = "Step was set to '2', meaning that the user can only select every second day in the calendar.";
+								}
+								</script></center>
+								
+									<div data-role="fieldcontain"><!--This is a field set form for a registeration form-->
+										<center><label for="username" style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold"><h4>Arrival Location</h4></label></center>
+										<center><input type="text" name="username" id="username" value="" placeholder="Arrival Location" size="50"  style="color:blue" required/></center>
+									</div>
+								<center style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold"><h4>Return Date: </h4><input type="date" id="myDate">
+								<p id="demo"></p><!--Date Picker-->
+								<script>
+								function myFunction() {
+									document.getElementById("myDate").step = "2";
+									document.getElementById("demo").innerHTML = "Step was set to '2', meaning that the user can only select every second day in the calendar.";
+								}
+								</script></center>
+									
+										<center><h4 style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold">Do you wish to book a Hotel</h4>
+										<p> 
+											<label><input type="radio" name="gender" value="male">Yes</label> 
+											<label><input type="radio" name="gender" value="female">No</label>
+										</p></center>
+									
+									<center><div id="example">
+										<div id="cap-view" class="demo-section k-content">
+											<h4 style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold">Hotel Search</h4>
+												
+											<h4 style="margin-top: 2em; color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold">No. of Stars</h4>
+											<select id="size" style="width: 25%;" >
+												<option>No. of Stars</option>
+												<option>1 Star</option>
+												<option>2 Stars</option>
+												<option>3 Stars</option>
+												<option>4 Stars</option>
+												<option>5 Stars</option>
+											</select>
+												
+											<h4 style="margin-top: 2em; color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold">No. of Rooms</h4>
+											<select id="size" style="width: 25%;" >
+												<option>No. of Rooms</option>
+												<option>1 Room</option>
+												<option>2 Rooms</option>
+												<option>3 Rooms</option>
+												<option>4 Rooms</option>
+												<option>5 Rooms</option>
+												<option>6 Rooms</option>
+												<option>7 Rooms</option>
+												<option>8 Rooms</option>
+												<option>9 Rooms</option>
+											</select>
+												
+											<h4 style="margin-top: 2em; color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold">No. Per Room</h4>
+											<select id="size" style="width: 25%;" >
+												<option>No. Per Rooms</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+											</select>
+										</div>
+									</div></center>
+
+							<center style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold" ><h4>Check In Date: </h4><input type="date" id="myDate">
+								<p id="demo"></p><!--Date Picker-->
+								<script>
+								function myFunction() {
+									document.getElementById("myDate").step = "2";
+									document.getElementById("demo").innerHTML = "Step was set to '2', meaning that the user can only select every second day in the calendar.";
+								}
+							</script></center>
+								
+								<center style="color: #ff9900;  text-shadow: 2px 2px #66ffcc; font-family: bold"><h4>Check Out Date: </h4><input type="date" id="myDate">
+								<p id="demo"></p><!--Date Picker-->
+								<script>
+								function myFunction() {
+									document.getElementById("myDate").step = "2";
+									document.getElementById("demo").innerHTML = "Step was set to '2', meaning that the user can only select every second day in the calendar.";
+								}
+								</script></center>
+							
+						<center><div class="form-group"><!--Submiton butons for moving on-->
+							<label class="col-md-4 control-label" for="Submit"></label>
+							<div class="col-md-4">
+								<a href= "paymentpage.html" button id="Submit" class="btn btn-success" type="Submit" style="color: #0033cc;  text-shadow: 2px 2px #ff0000; font-family: Times New Roman">Submit Button</a>
+								<a href= "booking.html" button id="Submit" class="btn btn-success" type="Submit" style="color: #0033cc;  text-shadow: 2px 2px #ff0000; font-family: Times New Roman">Back To Booking</a><br><br><br><br>
+							</div>
+						</div></center><br><br><br>								 
+					</div>
+										 
+					<nav class="row navbar navbar-inverse navbar-fixed-bottom"><!--Setup for the bootstrap navbar & link buttons on bottom-->
+						<div class='container'>
+						
+							<div class="nav navbar-header">  
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="cruiseship.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Cruise Ship</a></li>
+										<li><a href="suntrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sun Trip</a><li>
+										<li><a href="skitrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Ski Trip</a><li>
+										<li><a href="themepark.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Theme Park</a><li>
+										<li><a href="historicaltrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Historical Trip</a><li>
+										<li><a href="sportspackage.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sports Package</a></li>
+									</ul>
+								</div>					
+						</div>		
+					</nav>
+						
+	</body>
+</html><!--End of line User-->

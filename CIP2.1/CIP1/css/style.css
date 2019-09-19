@@ -1,0 +1,18 @@
+ body { background: linear-gradient(to right,  red,blue,green);}
+			  #footer, #header { height: 100px; text-align: center; margin-top: 1em}
+			  #sidebar div, #content div { height: 400px; padding: 2em; margin-bottom: 2em;}
+			  #footer div, #header div, #sidebar div, #content div 
+			  { background-color: orange; border: 2px solid transparent; border-radius: 20px;}
+			 <!--body {
+					background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_(1),_5._April_2012,_D%C3%BCsseldorf.jpg");
+					background-size: 100%;
+					background-repeat:no-repeat;
+				}-->
+					body {
+						background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_(1),_5._April_2012,_D%C3%BCsseldorf.jpg");
+						background-position: center center;
+						background-repeat: no-repeat;
+						background-attachment: fixed;
+						background-size: cover;
+						background-color: #464646;
+					}

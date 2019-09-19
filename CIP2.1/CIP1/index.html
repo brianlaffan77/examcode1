@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UYF-8"> 
+		<title>Basic Bootstrap</title>
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/bootstrap.min.css" /><!--bootstrp implementetion-->
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/custom.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script> 
+			<style>
+				  body { background: linear-gradient(to right, red, blue);}  <!--background color & styling for the page-->
+				  #footer, #header { height: 100px; text-align: center; margin-top: 1em}
+				  #sidebar div, #content div { height: 400px; padding: 2em; margin-bottom: 2em;}
+				  #footer div, #header div, #sidebar div, #content div 
+				  { background-color: orange; border: 2px solid transparent; border-radius: 20px;}
+				
+			</style>
+
+	</head>
+	
+	<body>
+					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse "> <!--Setup for the bootstrap navbar & link buttons on top-->
+						<div class='container'>
+								<div class="nav navbar-header">
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+										 <button type="button" class="navbar-toggle"
+											data-toggle="collapse" 	
+											data-target="#myCollapsingList">
+											<span class="sr-only">toggle navigation</span>
+											<span class="icon-bar"></span> 
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>	 
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="index.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial">Home</a><li>
+										<li><a href="loginpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Log In</a><li>
+										<li><a href="regeristrationform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Register</a><li>
+										<li><a href="booking.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Booking</a><li>
+										<li><a href="paymentpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Payments</a></li>
+										<li><a href="feedbackform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Feedback Form</a><li>
+										<li><a href="tel:(01)1234567" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial"> Click to Call <span class="glyphicon glyphicon-earphone"></span>(01)1234567</a><li>
+									</ul>
+								</div>
+								 
+					<script>
+						function myFunction() {
+							document.getElementById("demo").innerHTML = "contacting HolidaysRUs";
+						}
+					</script>
+						</div>		
+					</nav><br><br>
+						<center><legend><h1 style="color: #0033cc; text-shadow: 2px 2px #ff9900; font-family: Times New Roman">Welcome To HolidaysRUs</h1></legend></center><!--Header for Page-->
+					<div class='col-md-12'>	
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+						  </ol>
+							
+								<div class='container' id='container'> <!--Carousel wheel set up for images to be used for this project-->
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<center><img src="http://i.telegraph.co.uk/multimedia/archive/02449/arcadiaCruiseShip_2449967b.jpg" class="img-responsive" alt="Cruse Ship Resort" ></center>
+									  <div class="carousel-caption">
+										...
+									  </div>
+									</div>
+									<div class="item">
+										<center><img src="http://media-cdn.tripadvisor.com/media/photo-s/02/39/a2/0d/endless-summer-resort.jpg" class="img-responsive" alt="Summer Getaway Resort" ></center>
+									  <div class="carousel-caption">
+										...
+									  </div>
+									</div>
+									...
+									<div class="item">
+										<center><img src="http://cdni.condenast.co.uk/646x430/k_n/northstarattahoe_cnt_3dec09_pr_b.jpg" class="img-responsive" alt="Winter Ski Resort" ></center>
+									  <div class="carousel-caption">
+										...
+									  </div>
+									</div>
+									...
+									<div class="item">
+										<center><img src="http://europe.chinadaily.com.cn/business/images/attachement/jpg/site1/20130307/0022190fd33012a29e5e01.jpg" class="img-responsive" alt="Team Park Resort" ></center>
+									  <div class="carousel-caption">
+										...
+									  </div>
+									</div>
+									...
+									<div class="item">
+										<center><img src="http://www.glendaloughhermitage.ie/wp-content/gallery/feature-gallery/lone-tower.jpg" class="img-responsive" alt="Historic Getaway" ></center>
+									  <div class="carousel-caption">
+										...
+									  </div>
+									</div>
+									<div class="item">
+										<center><img src="http://www.christyhypnotherapy.com/images/content/sports_montage.jpg" class="img-responsive" alt="Sports Package" ></center>
+									  <div class="carousel-caption">
+									...
+									</div>
+								  </div>
+								</div>
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <!--Forward and backwards slider-->
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						 </div>
+						 <center><a href="loginpage.html"><button id="Submit" class="btn btn-success" type="Submit" style="color: #0033cc;  text-shadow: 2px 2px #ff0000; font-family: Times New Roman">Log In</button></a> <!--Buttons to other pages-->						 <a href="regeristrationform.html" button id="Submit" class="btn btn-success" type="Submit" style="color: #0033cc;  text-shadow: 2px 2px #ff0000; font-family: Times New Roman">Register</a> </center>		
+						 
+					</div>
+					
+					 <center><img src="http://rs543.pbsrc.com/albums/gg462/Coolcade283/DancingBanana.gif~c200"></center><!--Additional image-->
+					
+					<nav class="row navbar navbar-inverse navbar-fixed-bottom"><!--Setup for the bootstrap navbar & link buttons on bottom-->
+						<div class='container'>
+						
+						<nav class="row navbar navbar-inverse navbar-fixed-bottom">
+						<div class='container'>
+						
+								<div class="nav navbar-header">  
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="cruiseship.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Cruise Ship</a></li>
+										<li><a href="suntrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sun Trip</a><li>
+										<li><a href="skitrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Ski Trip</a><li>
+										<li><a href="themepark.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Theme Park</a><li>
+										<li><a href="historicaltrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Historical Trip</a><li>
+										<li><a href="sportspackage.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sports Package</a></li>
+									</ul>
+								</div>
+						</div>		
+					</nav>	
+	</body>
+</html><!--End of line User-->

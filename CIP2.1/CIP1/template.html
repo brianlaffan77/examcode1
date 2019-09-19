@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UYF-8">
+		<title>Basic Bootstrap</title> 
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/bootstrap.min.css" /> <!--bootstrp implementetion-->
+		<link rel='stylesheet' type='text/css' href="bootstrap/css/custom.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+			<style>
+				  body { background: linear-gradient(to right,  blue,green);}  <!--background color & styling for the page-->
+				  #footer, #header { height: 100px; text-align: center; margin-top: 1em}
+				  #sidebar div, #content div { height: 400px; padding: 2em; margin-bottom: 2em;}
+				  #footer div, #header div, #sidebar div, #content div 
+				  { background-color: orange; border: 2px solid transparent; border-radius: 20px;}
+				  body {
+						background-image: url("image tag goes here");
+						background-size: 100%;
+						background-repeat:no-repeat;
+				}
+				
+				
+			</style>
+		
+	</head>
+	
+	<body>
+					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse "> <!--Setup for the bootstrap navbar & link buttons on top-->
+						<div class='container'>
+								<div class="nav navbar-header">
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+										 <button type="button" class="navbar-toggle"
+											data-toggle="collapse" 	
+											data-target="#myCollapsingList">
+											<span class="sr-only">toggle navigation</span>
+											<span class="icon-bar"></span> 
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>	 
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="index.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Home</a><li>
+										<li><a href="loginpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Log In</a><li>
+										<li><a href="regeristrationform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Register</a><li>
+										<li><a href="booking.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Booking</a><li>
+										<li><a href="paymentpage.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Payments</a></li>
+										<li><a href="feedbackform.html" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial" >Feedback Form</a><li>
+										<li><a href="tel:(01)1234567" style="color: #ff9900; text-shadow: 2px 2px #ff0000; font-family: arial"> Click to Call <span class="glyphicon glyphicon-earphone"></span>(01)1234567</a><li>
+									</ul>
+								</div>
+								 
+					
+						</div>		
+					</nav><br><br>
+					<center></center>
+					<div class='container' id='container'>
+						<input type='hidden' name='submitted' id='submitted' value='1'/>
+							<!--code goes in here-->
+										
+					<nav class="row navbar navbar-inverse navbar-fixed-bottom"><!--Setup for the bootstrap navbar & link buttons on bottom-->
+						<div class='container'>
+						
+								<div class="nav navbar-header"> 
+									<a class="navbar-brand" href="https://www.youtube.com/watch?v=qGqkNagk8Gk" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >HolidaysRUs</a>	
+									<ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse">	
+										<li><a href="cruiseship.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Cruise Ship</a></li>
+										<li><a href="suntrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sun Trip</a><li>
+										<li><a href="skitrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Ski Trip</a><li>
+										<li><a href="themepark.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Theme Park</a><li>
+										<li><a href="historicaltrip.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Historical Trip</a><li>
+										<li><a href="sportspackage.html" style="color: #ff9900; text-shadow: 2px 2px #ff1a1a; font-family: arial" >Sports Package</a></li>
+									</ul>
+								</div>
+						</div>		
+					</nav>
+						
+	</body>
+</html><!--End of line User-->
